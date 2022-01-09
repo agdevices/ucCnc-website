@@ -411,6 +411,7 @@ h1 span{
     border: 3px solid #C6AC9A;
     height: 240px;
     background-color: white;
+    padding-top: 10px;
     /* border: 1px solid black; */
 }
 
@@ -435,8 +436,15 @@ h1 span{
         font-size: 16px;
         cursor: pointer;
         margin-bottom: 15px;
-
 }
+
+.mas-info-btn:hover{
+    background-color: #dd9932;
+    border: 2px solid #dd9932;
+    color: #ececec;
+}
+
+
 
 /* ************************ */
 /* Galeria */
