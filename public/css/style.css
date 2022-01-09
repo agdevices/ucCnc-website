@@ -1,0 +1,947 @@
+/* Colors pallet
+First: #4E3223
+Second: #5B2F20
+Third: #703623
+Fourth: #AA8164
+Fifth: #C8AB95
+Sixth: #D5BFA8
+Seventh: #DECFBE
+
+Orange: #dd9932
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    /* background-color: rgb(153, 165, 131); */
+
+    padding: 0;
+    margin: 0;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+a, nav, header, h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 0;
+}
+
+h2, h3{
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    color: #353535;
+    font-weight: 700;
+}
+
+a{
+    display: inline-block;
+}
+
+.title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* ************************ */
+/* Nuevo menu */
+/* ************************ */
+
+#nav{
+    background-color: white;
+}
+
+.navbar{
+    padding: 0;
+    display: flex;
+    height: 100px;
+    /* background-color: white; */
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-left: 10px;
+    height: 100%;
+    width: 150px;
+}
+
+.container-logo svg{
+    width: 120px;
+}
+
+.container-logo:hover{
+    transition: all ;
+}
+
+.container-logo:hover > svg #logo-mecha{
+    animation-name: mecha;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 300ms;
+}
+
+.container-logo:hover > svg #logo-chip{
+    animation-name: chip;
+    animation-duration: 100ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 2s;  
+}
+
+ @keyframes chip{
+    0% {
+      opacity: 0;
+    }
+
+    50%  {
+        opacity:1;
+    }
+
+    100%  {
+        opacity:1;
+    }
+}
+
+  
+ @keyframes mecha{
+    0% {
+      transform: rotate(0deg);  
+      transform: translateY(0%);
+    }
+
+    50%  {
+        transform: translateY(-15%);
+    }
+ 
+    100% {
+        transform: rotate(180deg);  
+
+      transform: translateY(0%);
+    }
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    margin: 20px 20px;
+}
+
+.menu-item-container a{
+    text-decoration: none;
+    font-family: 'Merriweather Sans';
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    padding: 0px 15px;
+    color: #353535;
+    transition: all 200ms ease;
+}
+
+.menu-item-container a:hover{
+    color: white;
+    background-color: #dd9932;
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 0;
+}
+
+.right{
+    margin-left: 80px;
+}
+
+.menu-item-container a.cta:hover{
+    background-color: #703623;
+    color: white;
+}
+
+.menu-item-container a.cta{
+    /* display: none; */
+    background: #AA8164;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* ************************ */
+/* Banner */
+/* ************************ */
+
+.banner{
+    background-image: url("../img/banner.webp");
+    /* height: 50vh; */
+    
+    height: 500px;
+    /* border: 1px solid red; */
+    /* contain: La prioridad es que la imagen se muestre en su totalidad */
+    /* background-size: contain; */
+  /* 
+    cover: La prioridad es que se expanda y ocupe todo el div o etiqueta. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: 20px 20px; */
+    background-position: center;
+}
+
+.background-h1{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 350px;
+    height: 500px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.3)
+}
+
+.text-h1{
+    font-size: 35px;
+    font-family: 'Merriweather', serif;
+    color: #353535;
+    font-weight: 700;
+}
+
+h1 span{
+    color: #5B2F20;
+    text-transform: uppercase;
+}
+
+
+/* ************************ */
+/* Nosotros */
+/* ************************ */
+
+.nosotros-container{
+    margin-top: 50px;
+    max-width: 100%;
+    /* margin-bottom: 0; */
+}
+
+.row-nosotros-container{
+    position: relative;
+    display: flex;
+    /* border: 1px solid green; */
+
+}
+
+.title h2.nosotros{
+    position: absolute;
+    /* display: inline-block; */
+    padding: 0;
+    margin: 0;
+    top: 30px;
+    left: 230px;
+}
+
+.svg-cel{
+    display: none;
+}
+
+.base-us-svg  .svg-desktop{
+    width: 637px;
+    height: 601px;
+}
+
+.pic-circle-frame{
+    stroke:#C6AC9A
+}
+
+.triangle{
+    fill: #C6AC9A;
+}
+
+.outer-circle{
+    fill: #5B2F20;
+
+}
+
+.circle1{
+    fill: #dd9932;
+}
+
+.circle2{
+    fill: #dd9932;
+}
+
+.circle3{
+    fill: #dd9932;
+}
+
+
+.nos-text{
+    margin-left: -140px;
+        font-family: 'Merriweather Sans';
+        font-size: 16px;
+        font-weight: 300;
+    /* width: 300px;
+    display: inline-block; */
+    /* border: 1px solid purple; */
+
+}
+
+.text1{
+    margin-top: 105px;
+    margin-bottom: 60px;
+}
+
+.text1 p span, .text2 p span, .text3 p span{
+    font-weight: 800;
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+    color: rgb(61, 61, 61);
+}
+
+.text2{
+    margin-left: 60px;
+}
+
+.text3{
+    margin-top: 75px;
+    margin-left: 60px;
+}
+
+.nos-img{
+    position: absolute;
+    top: 184px;
+    left: 165px;
+    width: 278px;
+    height: 278px;
+}
+
+.nos-img img{
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+/* ************************ */
+/* Servicios - cards */
+/* ************************ */
+
+.servicios-container{
+    margin-top: 50px;
+}
+
+.row-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin: 20px auto;
+    /* border: 1px solid black; */
+
+}
+
+.row-card-container .col-4{
+    display: flex;
+   justify-content: center;
+        /* border: 1px solid black; */
+}
+
+.card {
+    margin: 40px;
+    width: 60%;
+    /* border: 1px solid black; */
+
+}
+  
+.card-header{
+    position: relative;
+    height: 50px;
+    background: #C6AC9A;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.card-header h4{
+    text-align: left;
+    padding-left: 12px;
+    padding-top: 14px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #353535;
+}
+
+.svg-frame{
+    position: absolute;
+    top: -120%;
+    right: -20%;
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #C6AC9A;
+    height: 240px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.card-text{
+    font-size: 16px;
+    font-family: 'Merriweather Sans';
+    font-weight: 300;
+    width: 180px;
+    color: #353535;
+    /* text-align: start; */
+    text-align:center;
+        /* border: 1px solid black; */
+
+}
+
+.mas-info-btn{
+        border: 2px solid #AA8164;
+        background-color: inherit;
+        color: #353535;
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 15px;
+
+}
+
+/* ************************ */
+/* Galeria */
+/* ************************ */
+
+/* Ver gallery.css */
+
+
+/* ************************ */
+/* Materiales */
+/* ************************ */
+
+.materiales-container{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+}
+
+.mat-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+}
+
+.mat-box h4{
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #353535;
+    /* border: 1px solid black; */
+}
+
+.row-mat-container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: transparent;
+    /* border: 1px solid black; */
+}
+
+.mat-box img {
+    border-radius: 50%; 
+    border: 3px solid #AA8164;
+    width: 70%;
+        /* border: 1px solid black; */
+}
+
+/* ************************ */
+/* Especificaciones */
+/* ************************ */
+
+.specs-container{
+    margin-top: 50px;
+}
+
+/* ************************ */
+/* Footer */
+/* ************************ */
+
+.row-footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 250px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-icons svg{
+    width: 40px;
+    fill: #AA8164;
+    margin: 5px auto;
+}
+
+.contact-icons svg:hover{
+    fill: #353535;
+    transition: all 0.3s;
+}
+
+.card-back, .card-front{
+    display: flex;
+    height: 160px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card-back{
+    justify-content: start;
+    padding-left: 40px;
+}
+
+.card-front{
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.card-back img, .card-front img{
+    height: 100%;
+    /* box-shadow: 15px 15px 20px #b8b8b8; */
+}
+
+.copyright{
+    margin: 0 auto;
+}
+
+h5{
+    font-size: 10px;
+    color: #686767;
+
+}
+
+@media (max-width: 1200px) {
+   
+    .menu-item-container a{
+        padding: 10px 10px;
+        margin-left: 8px;
+    }
+    
+    .menu-item-container a:hover{
+        padding: 10px 10px;
+        border-radius: 15px 15ps 15px 0;
+    }
+    
+    .right{
+        margin-left: 20px;
+    }
+
+    .menu-item-container a.cta{
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .svg-cel{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-logo{
+        width: 120px;
+        /* border: 1px solid blue; */
+    }
+    
+    .left{
+        margin-right: 0;
+        margin-left: 0;
+    }
+   
+    .right{
+        margin-left: 0;
+    }
+    
+    .menu-item-container a{
+        padding: 10px 10px;
+        margin-left: 4px;
+    }
+
+    .menu-item-container a:hover{
+        padding: 10px 5px;
+        border-radius: 10px 10px 10px 0;
+    }
+
+    .menu-item-container a.cta{
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .banner{
+        height: 400px;
+    }
+    
+    .background-h1{
+        margin-left: 10px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .svg-cel{
+        display: none;
+    }
+
+    .base-us-svg .svg-desktop{
+        
+        width: 530px;
+        height: 570px;
+    }
+    
+    .nos-img{
+        /* position: absolute; */
+        top: 187px;
+        left: 138px;
+        width: 231px;
+        height: 110px
+    }
+
+    .row-card-container .col-4{
+        display: flex;
+       justify-content: center;
+       width: 50%;
+            /* border: 1px solid black; */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item-container a{
+        font-size: 16px;
+    }
+
+    .banner{
+        height: 350px;
+    }
+    
+    .background-h1{
+        margin-left: 10px;
+        width: 250px;
+        height: 350px;
+    }
+
+    .text-h1{
+        font-size: 22px;
+        /* font-weight: 700; */
+    }
+
+    .svg-cel{
+        display: none;
+    }
+
+    .nos-text{
+        margin-left: -62px;
+        width: 41.66%;
+    }
+
+    .text1{
+        margin-top: 135px;
+        margin-bottom: 35px;
+
+    }
+    
+    .text3{
+        margin-top: 48px;
+        margin-left: 53px;
+    }
+
+    .mat-box{
+        width: 33.33%;
+    }
+
+    .row-mat-container .mat-box .img-box {
+        width: 216px;
+        height: 216px;
+    }
+
+    .mat-box h4{
+        padding-top: 10px;
+        padding-bottom: 30px;
+        font-size: 25px;
+    }
+
+    .card-back, .card-front{
+        display: flex;
+        height: 120px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    
+    .card-back{
+        padding-left: 20px;
+    }
+    
+    .card-front{
+        padding-right: 20px;
+    }
+
+ } 
+
+@media(max-width: 576px) {
+    .navbar{
+        padding-top: 15px;
+        justify-content: space-between;
+        height: 150px;
+    }
+ 
+    .container-logo{
+        width: 120px;
+        margin-left: 60px;
+        /* margin-top: 0px; */
+        /* border: 1px solid blue; */
+    }
+
+    .left{
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0 20px 0 0;
+        /* border: 1px solid purple; */
+    }
+  
+    .right{
+        display: none;
+    }
+
+    .menu-item-container a{
+        display: inline-block;
+        font-size: 16px;
+        padding: 2px 10px;
+
+        /* margin-bottom: 1px; */
+    }
+    
+    .menu-item-container a:hover{
+        padding: 2px 5px;
+    }
+    
+    .menu-item-container a.cta{
+        margin-right: 15px;
+        padding: 8px;
+    }
+
+    .background-h1{
+        /* display: flex; */
+        /* text-align: center; */
+        /* align-items: center; */
+        /* margin-left: 10px; */
+        width: 180px;
+        /* height: 500px; */
+    }
+
+    /* .banner{
+        margin-top: 60px;
+    } */
+
+    .nosotros-container{
+        margin-top: 77px;
+    }
+    .svg-cel{
+        display: inline-block;
+        width: 163px;
+        height: 200px;
+    }
+
+    .base-us-svg .svg-desktop{
+        display: none;
+    }
+
+    .nos-img{
+        position: absolute;
+        top: 44px;
+        left: 8px;
+        width: 114px;
+        height: 110px;
+    }
+    
+    .nos-img img{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    h2, h3{
+         font-size: 25px;
+    }
+    
+    .title{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .title h2.nosotros{
+        top: -52px;
+        left: 14px;
+    }
+
+    .nos-text{
+        margin-left: -90px;
+            font-family: 'Merriweather Sans';
+            font-size: 12px;
+            font-weight: 300;
+            width: 55%;
+    }
+    
+    .text1{
+        margin-top: -24px;
+        margin-left: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .text2{
+        margin-left: 37px;
+    }
+    
+    .text3{
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+
+    .row-card-container .col-4{
+        display: flex;
+       justify-content: center;
+       width: 100%;
+            /* border: 1px solid black; */
+    }
+
+    #galery-btn-container{
+        display: none;
+    }
+
+    #galeria .row .galery-col {
+        /* float: left; */
+        width: 100%;
+        /* display: none; */
+         /* Hide all elements by default */
+    }
+
+    .servicios-container{
+        margin-top: 30px;
+    }
+
+    .materiales-container{
+        margin-bottom: 20px;
+    }
+
+    .mat-box{
+        width: 50%;
+    }
+
+    .row-mat-container .mat-box .img-box {
+        width: 150px;
+        height: 150px;
+    }
+
+   .mat-box .img-box .back p{
+        font-size: 12px;
+    }
+
+    .mat-box h4{
+        font-size: 18px;
+    }
+
+    .row-footer-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        /* height: 250px; */
+        /* border: 1px solid black; */
+    }
+
+    .card-back, .card-front{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+    
+    .card-back img, .card-front img{
+        box-shadow: none;
+    }
+
+
+    .card-back{
+        padding-left: 0px;
+    }
+    
+    .card-front{
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 50%;
+        /* border: 1px solid green; */
+
+    }
+
+    h5{
+        display: inline;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        /* border: 1px solid blue; */
+    }
+
+    .contact-icons svg{
+        margin: auto 10px;
+    }
+
+}

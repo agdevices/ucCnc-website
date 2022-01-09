@@ -1,0 +1,111 @@
+  /* Add padding BETWEEN each column */
+  .row, .row > .galery-col {
+    padding: 8px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+  
+  /* Create three equal columns that floats next to each other */
+.gallery-col {
+    float: left;
+    width: 25%;
+    display: none; /* Hide all elements by default */
+}
+
+  
+  /* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+    /* transform: scale; */
+}
+  
+.content {
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    
+    /* border: 1px solid black; */
+}
+  
+#gallery-btn-container{
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#gallery-btn-container .btn{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 15px;
+    color: #4E3223;
+    border-radius: 20px 20px 20px 0;
+
+}
+
+#gallery-btn-container .btn:hover{
+    color: white;
+    background-color: #dd9932;
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 0;
+}
+
+  /* The "show" class is added to the filtered elements */
+.show {
+    display:block;
+}
+
+.gallery-col .content img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    /* border: 1px solid black; */
+}
+
+/****************************/
+.gallery-col .content img:hover{
+    transform: scale(150%);
+    border: 4px solid white;
+    /* border: 1px solid black; */
+}
+
+.gallery-col .content h4{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #353535;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-col .content p{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #353535;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+  
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+}
+  
+.btn.active {
+    color: #D5BFA8;
+    background-color: #dd9932;
+    padding: 10px 15px;
+    border-radius: 20px 20px 20px 0;
+}
+
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-web-wm",
+  "version": "1.0.0",
+  "description": "CNC site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agdevices/proyecto-web-wm.git"
+  },
+  "author": "Agdevices",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agdevices/proyecto-web-wm/issues"
+  },
+  "homepage": "https://github.com/agdevices/proyecto-web-wm#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "postman-request": "^2.88.1-postman.30"
+  }
+}
