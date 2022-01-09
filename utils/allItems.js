@@ -1,6 +1,6 @@
 const request = require(`postman-request`);
 
-const baseUrl = `http://localhost:3001`
+const baseUrl = `https://uccnc-api.herokuapp.com/`
 
 
 const getAllIndexItems = (callback) => {
